@@ -4,6 +4,7 @@ from sqlmodel.ext.asyncio.session import AsyncSession
 from typing import AsyncGenerator
 
 from app.config import Config
+from app.books.models import Book
 
 engine = AsyncEngine(
     create_engine(
